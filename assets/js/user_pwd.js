@@ -22,6 +22,7 @@ $(function() {
         $.ajax({
             method: 'PATCH',
             url: '/my/updatepwd',
+            // 当前数据获取
             data: $(this).serialize(),
             success: function(res) {
                 if (res.code !== 0) {
